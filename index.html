@@ -25,23 +25,26 @@
 
         .buttons-row {
             display: flex;
+            flex-direction: column; /* Cambio a dirección de columna */
+            align-items: center; /* Centra los elementos en el eje transversal */
             margin-bottom: 20px;
         }
 
         .button {
             padding: 15px 30px;
             margin: 0 10px;
+            margin-bottom: 10px; /* Añade un margen inferior para separar los botones */
             font-size: 18px;
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background-color: #008f39; /* Verde claro */
+            background-color: #006699; /* Azul celeste un poco oscuro */
             color: #fff;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .button:hover {
-            background-color: #2D572C; /* Verde un poco más oscuro al pasar el ratón */
+            background-color: #004d66; /* Azul un poco más oscuro al pasar el ratón */
         }
 
         #theme-toggle {
@@ -63,14 +66,20 @@
             background-color: #333;
             color: #fff;
         }
+
+        /* Establece el tema oscuro por defecto al cargar la página */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
-<body>
+<body class="dark-mode">
 
     <h1>Proyecto Math</h1>
 
     <div class="buttons-row">
-        <a href="https://tokitoki123.github.io/codigo01.html" class="button">Código 1</a>
+        <a href="https://tokitoki123.github.io/codigo01.html" class="button">Calculadora</a>
         <a href="https://www.google.com" class="button">Código 2</a>
         <a href="https://www.google.com" class="button">Código 3</a>
         <a href="https://www.google.com" class="button">Código 4</a>
