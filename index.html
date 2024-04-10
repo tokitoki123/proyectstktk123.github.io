@@ -1,107 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Math</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <title>feliz cumpleaños!</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-        h1 {
-            margin-bottom: 20px;
-        }
-
-        .buttons-row {
-            display: flex;
-            flex-direction: column; /* Cambio a dirección de columna */
-            align-items: center; /* Centra los elementos en el eje transversal */
-            margin-bottom: 20px;
-        }
-
-        .button {
-            padding: 15px 30px;
-            margin: 0 10px;
-            margin-bottom: 10px; /* Añade un margen inferior para separar los botones */
-            font-size: 18px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background-color: #006699; /* Azul celeste un poco oscuro */
-            color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #004d66; /* Azul un poco más oscuro al pasar el ratón */
-        }
-
-        #theme-toggle {
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background-color: #C6CE00; /* Verde oscuro para el cambio de tema */
-            color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        #theme-toggle:hover {
-            background-color: #45A049; /* Verde oscuro un poco más claro al pasar el ratón */
-        }
-
-        .dark-mode {
-            background-color: #333;
-            color: #fff;
-        }
-
-        /* Establece el tema oscuro por defecto al cargar la página */
-        body.dark-mode {
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
 </head>
-<body class="dark-mode">
+<body>
 
-    <h1>Proyecto Math</h1>
+<canvas id=c></canvas>
+<p>Con mucho cariño<span>, por<a href="https://encoded.pe"> Jdav</a></span></p>
 
-    <div class="buttons-row">
-        <a href="https://tokitoki123.github.io/codigo01.html" class="button">Calculadora</a>
-        <a href="https://tokitoki123.github.io/codigo02.html" class="button">romanos</a>
-        <a href="https://www.google.com" class="button">Código 3</a>
-        <a href="https://www.google.com" class="button">Código 4</a>
-    </div>
-
-    <div class="buttons-row">
-        <a href="https://www.google.com" class="button">Código 5</a>
-        <a href="https://www.google.com" class="button">Código 6</a>
-        <a href="https://www.google.com" class="button">Código 7</a>
-        <a href="https://www.google.com" class="button">Código 8</a>
-    </div>
-
-    <button id="theme-toggle">Cambiar Tema</button>
-
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-        });
-    </script>
+  <script  src="./script.js"></script>
 
 </body>
+
 </html>
